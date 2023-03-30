@@ -19,6 +19,12 @@ For the LoFTR (a bit hacky) pipeline - check [LoFTR](loftr-pycolmap-3dreconstruc
 ![KeyNetAffNetHardNet-reconstruction](assets/keynet_affnet_wooden_lady.png)
 
 
+### Apple Object Capture mesh
+
+
+[!Apple Object Capture](assets/aoc_wooden_lady.png)
+
+The mesh, reconstructed by [Apple Object Capture](https://developer.apple.com/augmented-reality/object-capture/) app. Unfortunately, there is no way of exporting camera poses from ti
 
 The repo is based on [kornia-adalam](https://kornia-tutorials.readthedocs.io/en/latest/image_matching_adalam.html) tutorial, with help of DISK [h5py-to-colmap](https://github.com/cvlab-epfl/disk/tree/master/colmap) scripts.
 
