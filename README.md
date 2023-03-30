@@ -22,7 +22,8 @@ For the LoFTR (a bit hacky) pipeline - check [LoFTR](loftr-pycolmap-3dreconstruc
 ### Apple Object Capture mesh
 
 
-[!Apple Object Capture](assets/aoc_wooden_lady.png)
+![Apple Object Capture](assets/aoc_wooden_lady.png)
+
 
 The mesh, reconstructed by [Apple Object Capture](https://developer.apple.com/augmented-reality/object-capture/) app. Unfortunately, there is no way of exporting camera poses from ti
 
