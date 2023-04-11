@@ -117,6 +117,23 @@ def add_matches(db, h5_path, fname_to_id):
 
                 pbar.update(1)
 
+def import_into_colmap(img_dir,
+                       feature_dir ='.featureout',
+                       database_path = 'colmap.db',
+                       img_ext='.jpg'):
+    db = COLMAPDatabase.connect(database_path)
+    db.create_tables()
+    single_camera = False
+    fname_to_id = add_keypoints(db, feature_dir, img_dir, img_ext, 'simple-radial', single_camera)
+    add_matches(
+        db,
+        feature_dir,
+        fname_to_id,
+    )
+
+    db.commit()
+    return
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('h5_path', help=('Path to the directory with '
